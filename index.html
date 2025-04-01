@@ -1,14 +1,4 @@
-<!-- Project 2 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden project-card group">
-                    <div class="relative">
-                        <img src="https://cdn.pixabay.com/photo/2019/02/05/08/08/healthcare-3976639_960_720.jpg" alt="Medical Image Synthesis" class="w-full h-48 object-cover">
-                        <div class="absolute inset-0 bg-primary bg-opacity-75 flex items-center justify-center opacity-0 transition-opacity duration-300 project-overlay">
-                            <a href="#" class="text-white font-medium px-4 py-2 rounded-lg border border-white hover:bg-white hover:text-primary transition-colors duration-300">View Details</a>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Medical Image Synthesis with Stable Diffusion</h3>
-                        <p class="text-gray-600 mb-4">Fine-tuned Stable Diffusion models for text-to-image<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -448,7 +438,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-medium mb-1">Email</h4>
-                                    <p class="text-gray-600">sage0x1@gmail.com</p>
+                                    <p class="text-gray-600">ejigsonpeter@gmail.com</p>
                                 </div>
                             </div>
                             
@@ -458,7 +448,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-medium mb-1">Phone</h4>
-                                    <p class="text-gray-600">Available upon request</p>
+                                    <p class="text-gray-600">+2348136777465</p>
                                 </div>
                             </div>
                             
@@ -468,7 +458,7 @@
                                     <a href="https://github.com/ejigsonpeter" target="_blank" class="bg-gray-100 hover:bg-gray-200 text-gray-800 p-3 rounded-full transition-colors duration-300">
                                         <i class="fab fa-github text-xl"></i>
                                     </a>
-                                    <a href="https://linkedin.com/in/" target="_blank" class="bg-gray-100 hover:bg-gray-200 text-gray-800 p-3 rounded-full transition-colors duration-300">
+                                    <a href="https://www.linkedin.com/in/ejigapeter" target="_blank" class="bg-gray-100 hover:bg-gray-200 text-gray-800 p-3 rounded-full transition-colors duration-300">
                                         <i class="fab fa-linkedin-in text-xl"></i>
                                     </a>
                                     <a href="https://twitter.com/ejigsonpeter" target="_blank" class="bg-gray-100 hover:bg-gray-200 text-gray-800 p-3 rounded-full transition-colors duration-300">
@@ -486,91 +476,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-secondary text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <a href="#home" class="text-2xl font-bold">Ejiga<span class="text-primary">.AI</span></a>
-                    <p class="mt-2 text-gray-400">AI Engineer & Researcher</p>
-                </div>
-                
-                <div class="flex flex-wrap justify-center gap-4">
-                    <a href="#home" class="hover:text-primary transition-colors duration-300">Home</a>
-                    <a href="#about" class="hover:text-primary transition-colors duration-300">About</a>
-                    <a href="#skills" class="hover:text-primary transition-colors duration-300">Skills</a>
-                    <a href="#experience" class="hover:text-primary transition-colors duration-300">Experience</a>
-                    <a href="#projects" class="hover:text-primary transition-colors duration-300">Projects</a>
-                    <a href="#publications" class="hover:text-primary transition-colors duration-300">Publications</a>
-                    <a href="#contact" class="hover:text-primary transition-colors duration-300">Contact</a>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p>&copy; 2025 Ejiga Peter. All rights reserved.</p>
-                <div class="flex space-x-4 mt-4 md:mt-0">
-                    <a href="https://github.com/ejigsonpeter" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
-                        <i class="fab fa-github text-xl"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
-                        <i class="fab fa-linkedin-in text-xl"></i>
-                    </a>
-                    <a href="https://twitter.com/ejigsonpeter" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
-                        <i class="fab fa-twitter text-xl"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        const menuButton = document.getElementById('menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Close mobile menu when clicking on a link
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        // Close mobile menu when window is resized to desktop view
-        window.addEventListener('resize', () => {
-            if (window.innerWidth >= 768) {
-                mobileMenu.classList.add('hidden');
-            }
-        });
-
-        // Scroll to top button
-        const scrollToTopBtn = document.createElement('button');
-        scrollToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
-        scrollToTopBtn.className = 'fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-50';
-        scrollToTopBtn.setAttribute('aria-label', 'Scroll to top');
-        document.body.appendChild(scrollToTopBtn);
-
-        scrollToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                scrollToTopBtn.classList.remove('opacity-0');
-                scrollToTopBtn.classList.add('opacity-100');
-            } else {
-                scrollToTopBtn.classList.remove('opacity-100');
-                scrollToTopBtn.classList.add('opacity-0');
-            }
-        });
-    </script>
+   
     <section id="experience" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Professional Experience</h2>
@@ -802,3 +708,89 @@
                         </div>
                     </div>
                 </div>
+
+ <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#home" class="text-2xl font-bold">Ejiga<span class="text-primary">.AI</span></a>
+                    <p class="mt-2 text-gray-400">AI Engineer & Researcher</p>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#home" class="hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="#about" class="hover:text-primary transition-colors duration-300">About</a>
+                    <a href="#skills" class="hover:text-primary transition-colors duration-300">Skills</a>
+                    <a href="#experience" class="hover:text-primary transition-colors duration-300">Experience</a>
+                    <a href="#projects" class="hover:text-primary transition-colors duration-300">Projects</a>
+                    <a href="#publications" class="hover:text-primary transition-colors duration-300">Publications</a>
+                    <a href="#contact" class="hover:text-primary transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2025 Ejiga Peter. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="https://github.com/ejigsonpeter" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ejigapeter" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="https://twitter.com/ejigsonpeter" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Close mobile menu when window is resized to desktop view
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Scroll to top button
+        const scrollToTopBtn = document.createElement('button');
+        scrollToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+        scrollToTopBtn.className = 'fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-50';
+        scrollToTopBtn.setAttribute('aria-label', 'Scroll to top');
+        document.body.appendChild(scrollToTopBtn);
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.remove('opacity-0');
+                scrollToTopBtn.classList.add('opacity-100');
+            } else {
+                scrollToTopBtn.classList.remove('opacity-100');
+                scrollToTopBtn.classList.add('opacity-0');
+            }
+        });
+    </script>
